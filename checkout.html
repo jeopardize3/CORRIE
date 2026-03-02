@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CORRIESELLS | Checkout</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Spectral:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark"><img src="logo.png" alt="CORRIESELLS logo" class="brand-logo" /></div>
+          <div>
+            <p class="brand-title">CORRIESELLS</p>
+            <p class="brand-subtitle">Furniture + Home Decor</p>
+          </div>
+        </div>
+        <nav class="topnav advanced-nav">
+  <div class="nav-row">
+    <a href="index.html" class="nav-brand">Home</a>
+    <a href="products.html">Products</a>
+    <a href="category.html">Shop all</a>
+    
+                  <a href="dashboard.html">My Account</a>
+<a href="index.html#reviews">Reviews</a>
+  </div>
+  <div class="nav-row nav-pills">
+    <a href="index.html#kitchen">Kitchen</a>
+    <a href="index.html#dining">Dining</a>
+    <a href="index.html#bath">Bath</a>
+  </div>
+</nav>
+        <div class="topbar-actions">
+          <a class="auth-button secondary" href="login.html" data-auth-guest>Log in</a>
+          <a class="auth-button primary" href="signup.html" data-auth-guest>Sign up</a>
+          <a class="solid-button" href="cart.html">Cart</a>
+          <button class="ghost-button" type="button" data-auth-user data-auth-logout>Log out</button>
+          </a>
+          <button class="menu-button" aria-label="Open navigation" data-menu-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      <aside class="mobile-drawer" data-mobile-drawer>
+        <div class="drawer-header">
+          <p>Menu</p>
+          <button class="ghost-button" data-menu-close>Close</button>
+        </div>
+        <nav class="drawer-nav">
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="category.html">Shop all</a>
+  
+                <a href="dashboard.html">My Account</a>
+<a href="index.html#reviews">Reviews</a>
+  <a href="index.html#kitchen">Kitchen</a>
+  <a href="index.html#dining">Dining</a>
+  <a href="index.html#bath">Bath</a>
+</nav>
+
+
+      </aside>
+      <div class="drawer-backdrop" data-drawer-backdrop></div>
+
+      <section class="checkout-hero">
+        <div>
+          <p class="eyebrow">Checkout</p>
+          <h1>Secure your delivery and finalize payment.</h1>
+          <p>Every order includes delivery tracking, AR support, and dedicated care.</p>
+        </div>
+        <div class="checkout-progress">
+          <div class="progress-step active">1 · Delivery</div>
+          <div class="progress-step">2 · Payment</div>
+          <div class="progress-step">3 · Review</div>
+        </div>
+      </section>
+      <div class="auth-alert" data-auth-alert hidden>
+        <strong>Sign in required</strong>
+        <span>Please log in or sign up to continue to checkout.</span>
+        <div class="auth-alert-actions">
+          <a class="ghost-button" href="login.html?return=checkout">Log in</a>
+          <a class="solid-button" href="signup.html?return=checkout">Sign up</a>
+        </div>
+      </div>
+
+      <section class="checkout-grid">
+        <div class="checkout-forms">
+          <form class="form-card" data-checkout-delivery>
+            <h3>Delivery details</h3>
+            <div class="form-row">
+              <label>Full name</label>
+              <input type="text" placeholder="Jordan Ellis" data-required="true" />
+            </div>
+            <div class="form-row">
+              <label>Address</label>
+              <input type="text" placeholder="123 Willow Ave" data-required="true" />
+            </div>
+            <div class="form-row split">
+              <div>
+                <label>City</label>
+                <input type="text" placeholder="Seattle" data-required="true" />
+              </div>
+              <div>
+                <label>ZIP</label>
+                <input type="text" placeholder="98109" data-required="true" data-zip="true" />
+              </div>
+            </div>
+            <div class="form-row">
+              <label>Delivery window</label>
+              <select data-required="true">
+                <option>Thu, Apr 10 - Sat, Apr 12</option>
+                <option>Mon, Apr 14 - Wed, Apr 16</option>
+                <option>Fri, Apr 18 - Sun, Apr 20</option>
+              </select>
+            </div>
+          </form>
+
+          <form class="form-card">
+            <h3>Payment</h3>
+            <div class="payment-methods">
+              <button class="ghost-button payment-option is-active" type="button" data-payment="card">
+                Pay by card
+              </button>
+              <button class="ghost-button payment-option" type="button" data-payment="paypal">PayPal</button>
+              <button class="ghost-button payment-option" type="button" data-payment="gpay">Google Pay</button>
+              <button class="ghost-button payment-option" type="button" data-payment="apple">Apple Pay</button>
+            </div>
+            <div class="payment-panel is-active" data-payment-panel="card">
+              <div class="form-row">
+                <label>Card number</label>
+                <input type="text" placeholder="**** **** **** 4321" data-required="true" data-card="true" />
+              </div>
+              <div class="form-row split">
+                <div>
+                  <label>Expiry</label>
+                  <input type="text" placeholder="08/28" data-required="true" data-expiry="true" />
+                </div>
+                <div>
+                  <label>CVC</label>
+                  <input type="text" placeholder="123" data-required="true" data-cvc="true" />
+                </div>
+              </div>
+              <div class="form-row">
+                <label>Billing email</label>
+                <input type="email" placeholder="you@corrie.com" data-required="true" data-email="true" />
+              </div>
+            </div>
+            <div class="payment-panel" data-payment-panel="paypal">
+              <div class="form-row">
+                <label>PayPal email</label>
+                <input type="email" placeholder="you@paypal.com" data-required="true" data-email="true" />
+              </div>
+              <div class="form-row">
+                <label>Phone number</label>
+                <input type="tel" placeholder="+1 (555) 000-1234" data-required="true" data-phone="true" />
+              </div>
+            </div>
+            <div class="payment-panel" data-payment-panel="gpay">
+              <div class="form-row">
+                <label>Google account email</label>
+                <input type="email" placeholder="you@gmail.com" data-required="true" data-email="true" />
+              </div>
+              <div class="form-row">
+                <label>Billing ZIP</label>
+                <input type="text" placeholder="98109" data-required="true" data-zip="true" />
+              </div>
+            </div>
+            <div class="payment-panel" data-payment-panel="apple">
+              <div class="form-row">
+                <label>Apple ID</label>
+                <input type="email" placeholder="you@icloud.com" data-required="true" data-email="true" />
+              </div>
+              <div class="form-row">
+                <label>Billing ZIP</label>
+                <input type="text" placeholder="98109" data-required="true" data-zip="true" />
+              </div>
+            </div>
+            <button class="solid-button" type="button" data-place-order>Place order</button>
+          </form>
+        </div>
+        <aside class="checkout-summary">
+          <div class="summary-card">
+            <h3>Order summary</h3>
+            <div class="summary-items" data-checkout-items></div>
+            <div class="summary-row">
+              <span>Delivery</span>
+              <span data-checkout-delivery>$0</span>
+            </div>
+            <div class="summary-row">
+              <span>Estimated tax</span>
+              <span data-checkout-tax>$0</span>
+            </div>
+            <div class="summary-total">
+              <span>Total</span>
+              <span data-checkout-total>$0</span>
+            </div>
+            <button class="ghost-button">Apply promo code</button>
+          </div>
+          <div class="checkout-trust">
+            <h4>Peace of mind</h4>
+            <p>30-day returns, white-glove delivery, and priority support on every order.</p>
+          </div>
+        </aside>
+      </section>
+
+      <footer class="footer">
+        <div>
+          <h3>CORRIESELLS</h3>
+          <p>Design-forward shopping for homes that are lived in.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="#">Rooms</a>
+          <a href="#">Styles</a>
+          <a href="#">Sale</a>
+          <a href="#">Delivery</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="#">Order tracking</a>
+          <a href="refund-policy.html">Refund policy</a>
+          <a href="terms.html">Terms & conditions</a>
+          <a href="#">AR help</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Stay in touch</h4>
+          <p>Get curated drops and room edits.</p>
+          <button class="solid-button">Join the list</button>
+        </div>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

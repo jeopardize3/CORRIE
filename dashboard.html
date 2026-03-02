@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CORRIESELLS | Dashboard</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Spectral:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark"><img src="logo.png" alt="CORRIESELLS logo" class="brand-logo" /></div>
+          <div>
+            <p class="brand-title">CORRIESELLS</p>
+            <p class="brand-subtitle">Furniture + Home Decor</p>
+          </div>
+        </div>
+        <nav class="topnav advanced-nav">
+          <div class="nav-row">
+            <a href="index.html" class="nav-brand">Home</a>
+            <a href="products.html">Products</a>
+            <a href="category.html">Shop all</a>
+                          <a href="dashboard.html">My Account</a>
+<a href="index.html#reviews">Reviews</a>
+          </div>
+          <div class="nav-row nav-pills">
+            <a href="index.html#kitchen">Kitchen</a>
+            <a href="index.html#dining">Dining</a>
+            <a href="index.html#bath">Bath</a>
+          </div>
+        </nav>
+        <div class="topbar-actions">
+          <a class="solid-button" href="cart.html">Cart</a>
+          <button class="ghost-button" type="button" data-auth-user data-auth-logout>Log out</button>
+          </a>
+          <button class="menu-button" aria-label="Open navigation" data-menu-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      <aside class="mobile-drawer" data-mobile-drawer>
+        <div class="drawer-header">
+          <p>Menu</p>
+          <button class="ghost-button" data-menu-close>Close</button>
+        </div>
+        <nav class="drawer-nav">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="category.html">Shop all</a>
+                        <a href="dashboard.html">My Account</a>
+<a href="index.html#reviews">Reviews</a>
+          <a href="index.html#kitchen">Kitchen</a>
+          <a href="index.html#dining">Dining</a>
+          <a href="index.html#bath">Bath</a>
+        </nav>
+      </aside>
+      <div class="drawer-backdrop" data-drawer-backdrop></div>
+
+      <section class="checkout-hero">
+        <div>
+          <p class="eyebrow">Account</p>
+          <h1 data-dashboard-name>Welcome back.</h1>
+          <p>Manage your profile, preferences, and saved information.</p>
+        </div>
+        <div class="checkout-progress">
+          <div class="progress-step active">Profile</div>
+          <div class="progress-step">Preferences</div>
+          <div class="progress-step">Security</div>
+        </div>
+      </section>
+
+      <section class="checkout-grid">
+        <div class="checkout-forms">
+          <form class="form-card" data-dashboard-form>
+            <h3>Profile details</h3>
+            <div class="form-row">
+              <label>Full name</label>
+              <input type="text" placeholder="Your name" data-dashboard-name-input />
+            </div>
+            <div class="form-row">
+              <label>Email</label>
+              <input type="email" placeholder="you@corrie.com" data-dashboard-email-input />
+            </div>
+            <div class="form-row">
+              <label>Style preference</label>
+              <select data-dashboard-style-input>
+                <option>Modern</option>
+                <option>Japandi</option>
+                <option>Coastal</option>
+                <option>Traditional</option>
+                <option>Minimal</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label>New password</label>
+              <input type="password" placeholder="Update password" data-dashboard-password-input />
+            </div>
+            <button class="solid-button" type="button" data-dashboard-save>Save changes</button>
+          </form>
+          <form class="form-card">
+            <h3>Preferences & settings</h3>
+            <div class="form-row split">
+              <div class="form-row">
+                <label>Theme</label>
+                <select data-dashboard-theme>
+                  <option value="sand">Sand (default)</option>
+                  <option value="dusk">Dusk</option>
+                  <option value="forest">Forest</option>
+                  <option value="studio">Studio</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label>Currency</label>
+                <select data-dashboard-currency>
+                  <option value="USD">USD</option>
+                  <option value="EUR">EUR</option>
+                  <option value="GBP">GBP</option>
+                  <option value="CAD">CAD</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row split">
+              <div class="form-row">
+                <label>Language</label>
+                <select data-dashboard-language>
+                  <option value="English (US)">English (US)</option>
+                  <option value="English (UK)">English (UK)</option>
+                  <option value="French">French</option>
+                  <option value="Spanish">Spanish</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label>Room focus</label>
+                <select data-dashboard-room>
+                  <option value="Living room">Living room</option>
+                  <option value="Bedroom">Bedroom</option>
+                  <option value="Kitchen">Kitchen</option>
+                  <option value="Office">Office</option>
+                  <option value="Outdoor">Outdoor</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <label>Delivery preference</label>
+              <select data-dashboard-delivery>
+                <option value="Weekdays">Weekdays</option>
+                <option value="Weekends">Weekends</option>
+                <option value="Evenings">Evenings</option>
+                <option value="Anytime">Anytime</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label>Notifications</label>
+              <div class="checkbox-grid">
+                <label><input type="checkbox" data-dashboard-notify-email /> Order updates via email</label>
+                <label><input type="checkbox" data-dashboard-notify-sms /> Delivery updates via SMS</label>
+                <label><input type="checkbox" data-dashboard-review-invites /> Invite me to review</label>
+                <label><input type="checkbox" data-dashboard-ar-updates /> AR feature updates</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label>Privacy</label>
+              <div class="checkbox-grid">
+                <label><input type="checkbox" data-dashboard-save-card /> Save payment method for faster checkout</label>
+                <label><input type="checkbox" data-dashboard-share-activity /> Share my activity for personalization</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <aside class="checkout-summary">
+          <div class="summary-card">
+            <h3>Account actions</h3>
+            <div class="summary-row">
+              <span>Status</span>
+              <span data-dashboard-status>Active</span>
+            </div>
+            <div class="summary-row">
+              <span>Orders</span>
+              <span>3 open</span>
+            </div>
+            <div class="summary-total">
+              <span>Rewards</span>
+              <span>1,240 pts</span>
+            </div>
+            <button class="ghost-button" type="button" data-dashboard-logout>Log out</button>
+          </div>
+        </aside>
+      </section>
+
+      <footer class="footer">
+        <div>
+          <h3>CORRIESELLS</h3>
+          <p>Design-forward shopping for homes that are lived in.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="#">Rooms</a>
+          <a href="#">Styles</a>
+          <a href="#">Sale</a>
+          <a href="#">Delivery</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="#">Order tracking</a>
+          <a href="refund-policy.html">Refund policy</a>
+          <a href="terms.html">Terms & conditions</a>
+          <a href="#">AR help</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Stay in touch</h4>
+          <p>Get curated drops and room edits.</p>
+          <button class="solid-button">Join the list</button>
+        </div>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+

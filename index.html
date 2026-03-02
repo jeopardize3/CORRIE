@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CORRIESELLS | Furniture & Home Decor</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Spectral:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark"><img src="logo.png" alt="CORRIESELLS logo" class="brand-logo" /></div>
+          <div>
+            <p class="brand-title">CORRIESELLS</p>
+            <p class="brand-subtitle">Furniture + Home Decor</p>
+          </div>
+        </div>
+        <nav class="topnav advanced-nav">
+          <div class="nav-row">
+            <a href="index.html" class="nav-brand">Home</a>
+            <a href="products.html">Products</a>
+            <a href="category.html">Shop all</a>
+            <a href="dashboard.html">My Account</a>
+            <a href="index.html#reviews">Reviews</a>
+          </div>
+          <div class="nav-row nav-pills">
+            <a href="index.html#kitchen">Kitchen</a>
+            <a href="index.html#dining">Dining</a>
+            <a href="index.html#bath">Bath</a>
+          </div>
+        </nav>
+        <div class="topbar-actions">
+          <a class="auth-button secondary" href="login.html" data-auth-guest>Log in</a>
+          <a class="auth-button primary" href="signup.html" data-auth-guest>Sign up</a>
+          <a class="solid-button" href="cart.html">Cart</a>
+          <button class="ghost-button" type="button" data-auth-user data-auth-logout>Log out</button>
+          </a>
+          <button class="menu-button" aria-label="Open navigation" data-menu-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      <aside class="mobile-drawer" data-mobile-drawer>
+        <div class="drawer-header">
+          <p>Menu</p>
+          <button class="ghost-button" data-menu-close>Close</button>
+        </div>
+        <nav class="drawer-nav">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="category.html">Shop all</a>
+          <a href="dashboard.html">My Account</a>
+          <a href="index.html#reviews">Reviews</a>
+          <a href="index.html#kitchen">Kitchen</a>
+          <a href="index.html#dining">Dining</a>
+          <a href="index.html#bath">Bath</a>
+</nav>
+      </aside>
+      <div class="drawer-backdrop" data-drawer-backdrop></div>
+
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Reliable, visual-first shopping for big-ticket items</p>
+          <h1>Design a home that feels curated, not chaotic.</h1>
+          <p class="hero-copy">
+            CORRIESELLS is a large-scale home marketplace built around room-first browsing, true-to-scale
+            visualization, and trusted reviews with real customer photos.
+          </p>
+          <div class="hero-cta">
+            <a class="solid-button" href="category.html">Shop all</a>
+          </div>
+          <div class="hero-metrics">
+            <div>
+              <h3>4.8/5</h3>
+              <p>Avg. review rating with photo proof</p>
+            </div>
+            <div>
+              <h3>24k+</h3>
+              <p>Curated pieces across 12 rooms</p>
+            </div>
+            <div>
+              <h3>48h</h3>
+              <p>Delivery scheduling for most metro areas</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <p class="hero-card-title">Living Room Edit</p>
+            <div class="hero-card-image"></div>
+            <div class="hero-card-row">
+              <span>Cloudy Boucle Sofa</span>
+              <span>$1,499</span>
+            </div>
+            <div class="hero-card-row">
+              <span>Stonewashed Coffee Table</span>
+              <span>$489</span>
+            </div>
+          </div>
+          <div class="hero-visual-badge">AR Ready</div>
+        </div>
+      </section>
+
+      <section class="search-panel">
+        <div class="search-header">
+          <h2>Advanced Search</h2>
+          <p>Search by room, product, color, or style with typo tolerance and instant suggestions.</p>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Try: 'sage green sectional for small living room'" data-search-input />
+          <button class="solid-button" data-search-submit>Search</button>
+        </div>
+       
+        <div class="search-results" data-search-results>
+          <div class="search-results-header">
+            <h3>Results for “living room”</h3>
+            <span>Showing 6 of 842</span>
+          </div>
+          <div class="search-results-grid">
+            <article>
+              <div class="product-image"></div>
+              <div class="product-meta">
+                <h4>Marin Modular Sofa</h4>
+              <p>$1,299.99 · 4.9 (1,284)</p>
+                <span class="pill">AR ready</span>
+              </div>
+            </article>
+            <article>
+              <div class="product-image warm"></div>
+              <div class="product-meta">
+                <h4>Rowan Accent Chair</h4>
+              <p>$144.99 · 4.7 (510)</p>
+                <span class="pill">Limited stock</span>
+              </div>
+            </article>
+            <article>
+              <div class="product-image cool"></div>
+              <div class="product-meta">
+                <h4>Sunset Woven Rug</h4>
+              <p>$65.99 · 4.7 (2,103)</p>
+                <span class="pill">Best seller</span>
+              </div>
+            </article>
+            <article>
+              <div class="product-image alt"></div>
+              <div class="product-meta">
+                <h4>Matte Clay Lamp</h4>
+              <p>$96.99 · 4.8 (410)</p>
+                <span class="pill">Ships in 48h</span>
+              </div>
+            </article>
+            <article>
+              <div class="product-image"></div>
+              <div class="product-meta">
+                <h4>Brushed Oak Sideboard</h4>
+              <p>$509.99 · 4.8 (740)</p>
+                <span class="pill">Free delivery</span>
+              </div>
+            </article>
+            <article>
+              <div class="product-image warm"></div>
+              <div class="product-meta">
+                <h4>Haze Linen Drapes</h4>
+              <p>$52.00 · 4.6 (610)</p>
+                <span class="pill">Soft light</span>
+              </div>
+            </article>
+          </div>
+          <div class="search-empty" data-search-empty>
+            <h4>No results yet.</h4>
+            <p>Try a room, color, or style to start browsing.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-grid" id="styles">
+        <div class="feature">
+          <p class="eyebrow">Visualization Tools</p>
+          <h3>Place true-to-scale furniture in your room with AR.</h3>
+          <p>
+            Launch the phone camera to preview 3D models with accurate scale, lighting, and texture.
+            Save snapshots to share with your household before you buy.
+          </p>
+          <div class="feature-actions">
+            <button class="solid-button">Try AR in-app</button>
+            <button class="ghost-button">View AR catalog</button>
+          </div>
+        </div>
+        <div class="feature feature-visual"></div>
+        <div class="feature secondary">
+          <p class="eyebrow">Customer Engagement</p>
+          <h3>Photo-forward reviews that build trust.</h3>
+          <p>
+            Earn rewards for uploading photos, and browse verified buyer images to avoid costly returns.
+          </p>
+          <div class="reward-strip">
+            <span>+250 points for photo reviews</span>
+            <span>Verified buyer badge</span>
+            <span>Priority customer care</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-showcase">
+        <div class="showcase-header">
+          <div>
+            <p class="eyebrow">Featured picks</p>
+            <h2>Designed for everyday comfort.</h2>
+          </div>
+          <button class="ghost-button">View all furniture</button>
+        </div>
+        <div class="product-grid">
+          <article>
+            <div class="product-image"></div>
+            <div class="product-meta">
+              <h4>Marin Modular Sofa</h4>
+              <p>$1,299.99 · 4.9 (1,284)</p>
+              <span class="pill">AR ready</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image warm"></div>
+            <div class="product-meta">
+              <h4>Brushed Oak Sideboard</h4>
+              <p>$509.99 · 4.8 (740)</p>
+              <span class="pill">Free delivery</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image cool"></div>
+            <div class="product-meta">
+              <h4>Sunset Woven Rug</h4>
+              <p>$65.99 · 4.7 (2,103)</p>
+              <span class="pill">Best seller</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image alt"></div>
+            <div class="product-meta">
+              <h4>Matte Clay Lamp</h4>
+              <p>$96.99 · 4.8 (410)</p>
+              <span class="pill">Ships in 48h</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image"></div>
+            <div class="product-meta">
+              <h4>Nova Dining Set</h4>
+              <p>$1,252.99 · 4.6 (860)</p>
+              <span class="pill">Family size</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image warm"></div>
+            <div class="product-meta">
+              <h4>Rowan Accent Chair</h4>
+              <p>$144.99 · 4.7 (510)</p>
+              <span class="pill">Limited stock</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image cool"></div>
+            <div class="product-meta">
+              <h4>Stoneware Dinner Set</h4>
+              <p>$82.00 · 4.8 (620)</p>
+              <span class="pill">Kitchen</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image alt"></div>
+            <div class="product-meta">
+              <h4>Utensil Starter Kit</h4>
+              <p>$34.99 · 4.6 (1,104)</p>
+              <span class="pill">Best value</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="product-showcase" id="kitchen">
+        <div class="showcase-header">
+          <div>
+            <p class="eyebrow">Kitchen essentials</p>
+            <h2>Everyday tools with a refined look.</h2>
+          </div>
+          <button class="ghost-button">Shop kitchen</button>
+        </div>
+        <div class="product-grid">
+          <article>
+            <div class="product-image"></div>
+            <div class="product-meta">
+              <h4>Carbon Steel Pan</h4>
+              <p>$89 · 4.7 (540)</p>
+              <span class="pill">Utensils & cookware</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image warm"></div>
+            <div class="product-meta">
+              <h4>Walnut Cutting Board</h4>
+              <p>$47.99 · 4.8 (312)</p>
+              <span class="pill">Kitchen</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image cool"></div>
+            <div class="product-meta">
+              <h4>Matte Utensil Set</h4>
+              <p>$35.99 · 4.5 (970)</p>
+              <span class="pill">Utensils</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image alt"></div>
+            <div class="product-meta">
+              <h4>Glass Storage Trio</h4>
+              <p>$29.99 · 4.6 (410)</p>
+              <span class="pill">Pantry</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image"></div>
+            <div class="product-meta">
+              <h4>Espresso Compact Machine</h4>
+              <p>$54.99 · 4.7 (860)</p>
+              <span class="pill">Appliances</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image warm"></div>
+            <div class="product-meta">
+              <h4>Quiet Blender Pro</h4>
+              <p>$244.99 · 4.6 (1,020)</p>
+              <span class="pill">Appliances</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image cool"></div>
+            <div class="product-meta">
+              <h4>Smart Toaster Oven</h4>
+              <p>$68.27 · 4.8 (740)</p>
+              <span class="pill">Appliances</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image alt"></div>
+            <div class="product-meta">
+              <h4>Stainless Steel Cookware Set</h4>
+              <p>$349 · 4.7 (620)</p>
+              <span class="pill">Cookware</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image"></div>
+            <div class="product-meta">
+              <h4>Marble Rolling Pin</h4>
+              <p>$39 · 4.5 (410)</p>
+              <span class="pill">Baking</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image warm"></div>
+            <div class="product-meta">
+              <h4>Olive Wood Salad Set</h4>
+              <p>$29 · 4.6 (210)</p>
+              <span class="pill">Utensils</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image cool"></div>
+            <div class="product-meta">
+              <h4>Ceramic Knife Set</h4>
+              <p>$89 · 4.7 (310)</p>
+              <span class="pill">Cutlery</span>
+            </div>
+            </article>
+          <article>
+            <div class="product-image alt"></div>
+            <div class="product-meta">
+              <h4>Smart Fridge</h4>
+              <p>$1,299 · 4.8 (740)</p>
+              <span class="pill">Appliances</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="product-showcase" id="dining">
+        <div class="showcase-header">
+          <div>
+            <p class="eyebrow">Dining</p>
+            <h2>Set the table for everyday gatherings.</h2>
+          </div>
+          <button class="ghost-button">Shop dining</button>
+        </div>
+        <div class="product-grid">
+          <article>
+            <div class="product-image"></div>
+            <div class="product-meta">
+              <h4>Oak Dining Table</h4>
+              <p>$429.99 · 4.7 (480)</p>
+              <span class="pill">Dining</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image warm"></div>
+            <div class="product-meta">
+              <h4>Canvas Dining Chair</h4>
+              <p>$135.00 · 4.6 (260)</p>
+              <span class="pill">Set of 2</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image cool"></div>
+            <div class="product-meta">
+              <h4>Stoneware Serve Set</h4>
+              <p>$89.99 · 4.8 (310)</p>
+              <span class="pill">Serveware</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image alt"></div>
+            <div class="product-meta">
+              <h4>Textured Table Runner</h4>
+              <p>$32.99 · 4.5 (620)</p>
+              <span class="pill">Linen</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="product-showcase" id="bath">
+        <div class="showcase-header">
+          <div>
+            <p class="eyebrow">Bath</p>
+            <h2>Clean lines, calm routines.</h2>
+          </div>
+          <button class="ghost-button">Shop bath</button>
+        </div>
+        <div class="product-grid">
+          <article>
+            <div class="product-image"></div>
+            <div class="product-meta">
+              <h4>Oak Vanity Storage</h4>
+              <p>$439.99 · 4.6 (210)</p>
+              <span class="pill">Bath</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image warm"></div>
+            <div class="product-meta">
+              <h4>Waffle Towel Set</h4>
+              <p>$100.00 · 4.8 (940)</p>
+              <span class="pill">Linens</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image cool"></div>
+            <div class="product-meta">
+              <h4>Stone Soap Dispenser</h4>
+              <p>$91.99 · 4.7 (510)</p>
+              <span class="pill">Countertop</span>
+            </div>
+          </article>
+          <article>
+            <div class="product-image alt"></div>
+            <div class="product-meta">
+              <h4>Rounded Bath Mirror</h4>
+              <p>$199.99 · 4.6 (330)</p>
+              <span class="pill">Wall decor</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+        <div class="carousel-header">
+          <div>
+            <h2>Customers also bought</h2>
+            <p>Based on co-purchase trends across similar rooms and styles.</p>
+          </div>
+          <button class="ghost-button">See all</button>
+        </div>
+        <div class="carousel-track">
+          <article>
+            <div class="card-image"></div>
+            <h4>Marin Modular Sofa</h4>
+              <p>$1,299.99 · 4.9 (1,284)
+          </article>
+          <article>
+            <div class="card-image alt"></div>
+            <h4>Brushed Oak Sideboard</h4>
+              <p>$509.99 · 4.8 (740)
+          </article>
+          <article>
+            <div class="card-image warm"></div>
+            <h4>Sunset Woven Rug</h4>
+              <p>$65.99 · 4.7 (2,103)
+          </article>
+          <article>
+            <div class="card-image cool"></div>
+            <h4>Matte Clay Lamp</h4>
+              <p>$96.99 · 4.8 (410)
+          </article>
+          <article>
+            <div class="card-image"></div>
+            <h4>Stoneware Dinner Set</h4>
+              <p>$82.00 · 4.8 (620)
+          </article>
+          <article>
+            <div class="card-image warm"></div>
+            <h4>Utensil Starter Kit</h4>
+              <p>$34.99 · 4.6 (1,104)
+          </article>
+          <article>
+            <div class="card-image cool"></div>
+            <h4>Espresso Compact Machine</h4>
+              <p>$54.99 · 4.7 (860)
+          </article>
+        </div>
+      </section>
+
+      <section class="review-section" id="reviews">
+        <div class="review-header">
+          <h2>Real photos, real homes</h2>
+          <p>Upload a photo review and earn 250 points toward your next purchase.</p>
+          <button class="solid-button">Write a review</button>
+        </div>
+        <div class="review-grid">
+          <article data-review-product="Marin Modular Sofa">
+            <div class="review-photo"></div>
+            <h4>“Perfect scale for our loft.”</h4>
+            <p>Aria L. · Verified buyer</p>
+          </article>
+          <article data-review-product="Brushed Oak Sideboard">
+            <div class="review-photo warm"></div>
+            <h4>“Color matched our walls exactly.”</h4>
+            <p>Melissa K. · Verified buyer</p>
+          </article>
+          <article data-review-product="Sunset Woven Rug">
+            <div class="review-photo cool"></div>
+            <h4>“Easy to assemble, sturdy feel.”</h4>
+            <p>Daniel P. · Verified buyer</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="recently-viewed">
+        <div>
+          <h2>Recently viewed</h2>
+          <p>Pick up where you left off.</p>
+        </div>
+        <div class="recent-grid">
+          <article>
+            <div class="card-image"></div>
+            <h4>Nova Dining Set</h4>
+              <p>$1,252.99
+          </article>
+          <article>
+            <div class="card-image warm"></div>
+            <h4>Rowan Accent Chair</h4>
+              <p>$144.99
+          </article>
+          <article>
+            <div class="card-image cool"></div>
+            <h4>Haze Linen Drapes</h4>
+              <p>$52.00
+          </article>
+          <article>
+            <div class="card-image alt"></div>
+            <h4>Quiet Blender Pro</h4>
+              <p>$244.99
+          </article>
+          <article>
+            <div class="card-image"></div>
+            <h4>Smart Toaster Oven</h4>
+              <p>$68.27
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div>
+          <h3>CORRIESELLS</h3>
+          <p>Design-forward shopping for homes that are lived in.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="#">Rooms</a>
+          <a href="#">Styles</a>
+          <a href="#">Sale</a>
+          <a href="#">Delivery</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="#">Order tracking</a>
+          <a href="refund-policy.html">Refund policy</a>
+          <a href="terms.html">Terms & conditions</a>
+          <a href="#">AR help</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Stay in touch</h4>
+          <p>Get curated drops and room edits.</p>
+          <button class="solid-button">Join the list</button>
+        </div>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

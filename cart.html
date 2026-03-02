@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CORRIESELLS | Cart</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Spectral:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark"><img src="logo.png" alt="CORRIESELLS logo" class="brand-logo" /></div>
+          <div>
+            <p class="brand-title">CORRIESELLS</p>
+            <p class="brand-subtitle">Furniture + Home Decor</p>
+          </div>
+        </div>
+        <nav class="topnav advanced-nav">
+  <div class="nav-row">
+    <a href="index.html" class="nav-brand">Home</a>
+    <a href="products.html">Products</a>
+    <a href="category.html">Shop all</a>
+    
+                  <a href="dashboard.html">My Account</a>
+<a href="index.html#reviews">Reviews</a>
+  </div>
+  <div class="nav-row nav-pills">
+    <a href="index.html#kitchen">Kitchen</a>
+    <a href="index.html#dining">Dining</a>
+    <a href="index.html#bath">Bath</a>
+  </div>
+</nav>
+        <div class="topbar-actions">
+          <a class="auth-button secondary" href="login.html" data-auth-guest>Log in</a>
+          <a class="auth-button primary" href="signup.html" data-auth-guest>Sign up</a>
+          <a class="solid-button" href="cart.html">Cart</a>
+          <button class="ghost-button" type="button" data-auth-user data-auth-logout>Log out</button>
+          </a>
+          <button class="menu-button" aria-label="Open navigation" data-menu-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      <aside class="mobile-drawer" data-mobile-drawer>
+        <div class="drawer-header">
+          <p>Menu</p>
+          <button class="ghost-button" data-menu-close>Close</button>
+        </div>
+        <nav class="drawer-nav">
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="category.html">Shop all</a>
+  
+                <a href="dashboard.html">My Account</a>
+<a href="index.html#reviews">Reviews</a>
+  <a href="index.html#kitchen">Kitchen</a>
+  <a href="index.html#dining">Dining</a>
+  <a href="index.html#bath">Bath</a>
+</nav>
+
+
+      </aside>
+      <div class="drawer-backdrop" data-drawer-backdrop></div>
+
+      <section class="cart-hero">
+        <div>
+          <p class="eyebrow">Your cart</p>
+          <h1>Settle the final details before checkout.</h1>
+          <p>Confirm delivery dates, add protection plans, and keep your order on track.</p>
+        </div>
+        <div class="cart-summary-card">
+          <h3>Order summary</h3>
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span data-cart-subtotal>$0</span>
+          </div>
+          <div class="summary-row">
+            <span>Delivery</span>
+            <span data-cart-delivery>$0</span>
+          </div>
+          <div class="summary-row">
+            <span>Estimated tax</span>
+            <span data-cart-tax>$0</span>
+          </div>
+          <div class="summary-total">
+            <span>Total</span>
+            <span data-cart-total>$0</span>
+          </div>
+          <div class="auth-alert" data-auth-alert hidden>
+            <strong>Sign in required</strong>
+            <span>Please log in or sign up to continue to checkout.</span>
+            <div class="auth-alert-actions">
+              <a class="ghost-button" href="login.html?return=checkout">Log in</a>
+              <a class="solid-button" href="signup.html?return=checkout">Sign up</a>
+            </div>
+          </div>
+          <a class="solid-button" href="checkout.html" data-checkout-gate>Proceed to checkout</a>
+          <button class="ghost-button">Apply promo code</button>
+        </div>
+      </section>
+
+      <section class="cart-grid">
+        <div class="cart-items" data-cart-items>
+          <div class="cart-empty">
+            <h3>Your cart is empty.</h3>
+            <p>Find pieces you love and add them here.</p>
+            <a class="solid-button" href="products.html">Browse products</a>
+          </div>
+        </div>
+        <aside class="cart-sidebar">
+          <div class="delivery-card">
+            <h3>Delivery options</h3>
+            <div class="delivery-option">
+              <div>
+                <h4>Standard delivery</h4>
+                <p>Thu, Apr 10 - Sat, Apr 12</p>
+              </div>
+              <span>$149</span>
+            </div>
+            <div class="delivery-option">
+              <div>
+                <h4>White-glove setup</h4>
+                <p>Includes room placement and packaging removal</p>
+              </div>
+              <span>$299</span>
+            </div>
+            <button class="ghost-button">Schedule delivery</button>
+          </div>
+          <div class="cart-note">
+            <h4>Need help measuring?</h4>
+            <p>Use the AR tool to confirm scale before delivery.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="recently-viewed">
+        <div>
+          <h2>You might also like</h2>
+          <p>Finish your room with these add-ons.</p>
+        </div>
+        <div class="recent-grid">
+          <article>
+            <div class="card-image"></div>
+            <h4>Stonewashed Coffee Table</h4>
+              <p>$489
+          </article>
+          <article>
+            <div class="card-image warm"></div>
+            <h4>Amber Linen Throw</h4>
+            <p>$89</p>
+          </article>
+          <article>
+            <div class="card-image cool"></div>
+            <h4>Soft Glow Floor Lamp</h4>
+            <p>$159</p>
+          </article>
+          <article>
+            <div class="card-image alt"></div>
+            <h4>Stoneware Dinner Set</h4>
+              <p>$82.00
+          </article>
+          <article>
+            <div class="card-image"></div>
+            <h4>Espresso Compact Machine</h4>
+              <p>$54.99
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div>
+          <h3>CORRIESELLS</h3>
+          <p>Design-forward shopping for homes that are lived in.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="#">Rooms</a>
+          <a href="#">Styles</a>
+          <a href="#">Sale</a>
+          <a href="#">Delivery</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="#">Order tracking</a>
+          <a href="refund-policy.html">Refund policy</a>
+          <a href="terms.html">Terms & conditions</a>
+          <a href="#">AR help</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Stay in touch</h4>
+          <p>Get curated drops and room edits.</p>
+          <button class="solid-button">Join the list</button>
+        </div>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

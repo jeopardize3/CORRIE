@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CORRIESELLS | Login</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Spectral:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark"><img src="logo.png" alt="CORRIESELLS logo" class="brand-logo" /></div>
+          <div>
+            <p class="brand-title">CORRIESELLS</p>
+            <p class="brand-subtitle">Furniture + Home Decor</p>
+          </div>
+        </div>
+        <nav class="topnav advanced-nav">
+          <div class="nav-row">
+            <a href="index.html" class="nav-brand">Home</a>
+            <a href="products.html">Products</a>
+            <a href="category.html">Shop all</a>
+            
+                        <a href="dashboard.html">My Account</a>
+</div>
+        </nav>
+        <div class="topbar-actions">
+          <a class="auth-button primary" href="signup.html" data-auth-guest>Sign up</a>
+          <a class="solid-button" href="cart.html">Cart</a>
+          <button class="ghost-button" type="button" data-auth-user data-auth-logout>Log out</button>
+          </a>
+          <button class="menu-button" aria-label="Open navigation" data-menu-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      <aside class="mobile-drawer" data-mobile-drawer>
+        <div class="drawer-header">
+          <p>Menu</p>
+          <button class="ghost-button" data-menu-close>Close</button>
+        </div>
+        <nav class="drawer-nav">
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="category.html">Shop all</a>
+  
+                <a href="dashboard.html">My Account</a>
+<a href="index.html#reviews">Reviews</a>
+  <a href="index.html#kitchen">Kitchen</a>
+  <a href="index.html#dining">Dining</a>
+  <a href="index.html#bath">Bath</a>
+</nav>
+
+
+      </aside>
+      <div class="drawer-backdrop" data-drawer-backdrop></div>
+
+      <section class="auth-hero">
+        <div>
+          <p class="eyebrow">Welcome back</p>
+          <h1>Log in to your CORRIESELLS account.</h1>
+          <p>Track orders and keep your room edits synced.</p>
+        </div>
+        <form class="form-card auth-card">
+          <h3>Log in</h3>
+          <div class="form-row">
+            <label>Email</label>
+            <input type="email" placeholder="you@gmail.com" data-login-email />
+          </div>
+          <div class="form-row">
+            <label>Password</label>
+            <input type="password" placeholder="••••••••" data-login-password />
+          </div>
+          <div class="auth-row">
+            <label><input type="checkbox" /> Remember me</label>
+            <button class="ghost-button" type="button" data-forgot-toggle>Forgot password</button>
+          </div>
+          <div class="form-row is-hidden" data-forgot-panel>
+            <label>Reset email</label>
+            <div class="input-row">
+              <input type="email" placeholder="you@gmail.com" data-forgot-email />
+              <button class="ghost-button" type="button" data-forgot-send>Send reset</button>
+            </div>
+          </div>
+          <div class="auth-row is-block">
+            <label
+              ><input type="checkbox" data-login-terms required /> I agree to the
+              <a href="terms.html">Terms & conditions</a> and
+              <a href="contact.html">Contact</a> policies.</label
+            >
+          </div>
+          <div class="auth-actions">
+            <button class="solid-button" type="button" data-auth-login>Log in</button>
+          </div>
+          <div class="auth-divider">or continue with</div>
+          <div class="social-buttons">
+            <div class="google-signin" data-google-signin></div>
+          </div>
+          <p class="auth-footer">
+            New here? <a href="signup.html">Create an account</a> ·
+            <a href="terms.html">Terms</a> · <a href="contact.html">Contact</a>
+          </p>
+        </form>
+      </section>
+
+      <footer class="footer">
+        <div>
+          <h3>CORRIESELLS</h3>
+          <p>Design-forward shopping for homes that are lived in.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="#">Rooms</a>
+          <a href="#">Styles</a>
+          <a href="#">Sale</a>
+          <a href="#">Delivery</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="#">Order tracking</a>
+          <a href="refund-policy.html">Refund policy</a>
+          <a href="terms.html">Terms & conditions</a>
+          <a href="#">AR help</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Stay in touch</h4>
+          <p>Get curated drops and room edits.</p>
+          <button class="solid-button">Join the list</button>
+        </div>
+      </footer>
+    </div>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
